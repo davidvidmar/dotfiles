@@ -1,0 +1,13 @@
+[user]
+	name = "David Vidmar"
+	email = info@vidmar.net
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[color]
+	ui = true
+[core]
+	editor = code
+	excludesfile = /Users/david/.gitignore_global
