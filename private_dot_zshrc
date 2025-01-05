@@ -1,8 +1,12 @@
-# ~/.zshrcautoload -U promptinit; promptin
+# ~/.zshrc
 
 export HOMEBREW_NO_ENV_HINTS=True
 
-alias ll='ls -la -G'
+alias lls='ls -la -G'
+
+alias ll='eza -l --no-user --no-permissions --icons --group-directories-first --git --git-repos'
+alias lla='ll -a'
+alias llt='ll --tree'
 alias zshreload='source ~/.zshrc'
 
 alias cd..='cd ..'
@@ -16,12 +20,18 @@ alias ....='cd ../../..'
 alias weather='curl v2.wttr.in'  # print weather for current location (https://github.com/chubin/wttr.in)
 
 # pure prompt
-
-fpath+=/opt/homebrew/share/zsh/site-functions
-
-autoload -U promptinit; promptinit
-prompt pure
+# fpath+=/opt/homebrew/share/zsh/site-functions
+# autoload -U promptinit; promptinit
+# prompt pure
 
 # 
 source /opt/homebrew/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /opt/homebrew/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+
+# eval "$(atuin init zsh)"
+
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
+
+export EDITOR=nano
+

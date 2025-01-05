@@ -1,0 +1,81 @@
+# docs:
+#   ghostty +show-config --default --docs | nvim
+#   https://ghostty.org/docs/config/reference
+# examples:
+#   https://github.com/search?q=path%3Aghostty%2Fconfig&type=code
+#   https://github.com/fredrikaverpil/dotfiles/blob/main/ghostty.conf
+# location:
+#   https://ghostty.org/docs/config#file-location
+# ->$HOME/.config/ghostty/config
+
+# Theme
+#   ghostty +list-themes
+#   https://ghostty.org/docs/features/theme
+#   https://ghostty.org/docs/config/reference#theme
+
+# theme = nord
+theme = dracula+
+# theme = ayu mirage
+# theme = catppuccin-macchiato
+# theme = dracula
+# theme = kanagawa wave
+
+# Font
+#   ghostty +list-fonts
+#   https://ghostty.org/docs/config/reference#font-family
+
+font-family = Symbols Nerd Font Mono
+# https://github.com/ryanoasis/nerd-fonts/releases/download/v2.2.2/NerdFontsSymbolsOnly.zip
+font-family = TX-02
+font-family-italic = "Maple Mono"
+font-family-bold-italic = "Maple Mono"
+
+#font-family = Mononoki Nerd Font Mono 
+#font-family = Geist Mono
+#font-family = B612 Mono
+#font-family = Source Code Pro
+#font-family = TX-02 SemiCondensed
+#font-family = Iosevka SS14
+#font-family = Iosevka SS14 Extended
+
+font-size = 15
+font-thicken = false 
+
+## Window
+
+window-padding-x = 6,2
+window-padding-y = 8,2
+
+window-padding-balance = false
+#window-padding-color = extend
+
+window-decoration = true
+window-title-font-family = "Maple Mono"
+
+background-opacity = 0.95
+background-blur-radius = 10
+unfocused-split-opacity = 0.7
+
+## MacOS
+
+macos-titlebar-style = tabs
+# macos-titlebar-style = native
+# macos-option-as-alt = false
+quit-after-last-window-closed = true
+
+# macos-icon = custom-style
+# macos-icon-frame = beige 
+# macos-icon-frame = aluminum, beige, plastic, chrome
+# macos-icon-ghost-color = #D9654E
+# macos-icon-screen-color = #DAED61,#694D39
+
+# Cursor
+
+cursor-opacity = 0.7
+
+## Mouse
+
+mouse-hide-while-typing = true
+#resize-overlay = never
+
+#keybind = global:super+“=toggle_quick_terminal
