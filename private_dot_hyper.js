@@ -8,23 +8,37 @@ module.exports = {
     // or `'canary'` for less polished but more frequent updates
     updateChannel: 'stable',
     // default font size in pixels for all tabs
-    fontSize: 15,
+    fontSize: 14,
     // font family with optional fallbacks
+    // fontFamily: 'JetBrains Mono',
+    // fontFamily: '"Iosevka SS14 Extended"',
+      fontFamily: 'TX-02 Semicondensed',
+    // fontFamily: 'SF Mono',
     // fontFamily: 'Monaco',
-    // fontFamily: 'Fantasque Sans Mono',
-    fontFamily: 'JetBrains Mono',
+    // fontFamily: 'Berkeley Mono',
+    // fontFamily: 'Departure Mono',
+    //fontFamily: 'Source Code Pro',
+    // fontFamily: 'Monaspace Neon',
+    // fontFamily: 'Geist Mono',
     // fontFamily: 'CommitMono',
     // fontFamily: 'Hack Nerd Font',
-    // fontFamily: '"Iosevka SS14 Extended"',
     // fontFamily: '"Berkeley Mono Trial"',
     // fontFamily: '"IBM Plex Mono", "JetBrains Mono"',
-    // fontFamily: 'SF Mono',
+    // fontFamily: 'Fantasque Sans Mono',
+    
     // default font weight: 'normal' or 'bold'
+
+    // catppuccinTheme: 'Frappé',
+    // catppuccinTheme: 'Latte',
+    // catppuccinTheme: 'Frappé',
+    // catppuccinTheme: 'Macchiato',
+    catppuccinTheme: 'Mocha',
+    
     fontWeight: 'normal',
     // font weight for bold characters: 'normal' or 'bold'
     fontWeightBold: 'bold',
     // line height as a relative unit
-    lineHeight: 1.2,
+    lineHeight: 1.3,
     // letter spacing as a relative unit
     letterSpacing: 0,
     // terminal cursor background color and opacity (hex, rgb, hsl, hsv, hwb or cmyk)
@@ -58,7 +72,7 @@ module.exports = {
     // default: `true` (without backticks and without quotes) on Windows and Linux, ignored on macOS
     showWindowControls: '',
     // custom padding (CSS format, i.e.: `top right bottom left`)
-    padding: '6px 6px',
+    padding: '12px 12px',
     // the full list. if you're going to provide the full color palette,
     // including the 6 x 6 color cubes and the grayscale map, just provide
     // an array here instead of a color map object
@@ -150,7 +164,10 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ["hyper-opacity", "hyper-nord", "hyper-active-tab"],
+  plugins: ["hyper-opacity", "hyper-active-tab", 'hypurr#latest'],
+
+  // "hyper-dracula", "hyper-nord"
+
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
   // to load it and avoid it being `npm install`ed

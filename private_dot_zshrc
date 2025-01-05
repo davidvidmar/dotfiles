@@ -2,11 +2,12 @@
 
 export HOMEBREW_NO_ENV_HINTS=True
 
-alias lls='ls -la -G'
-
-alias ll='eza -l --no-user --no-permissions --icons --group-directories-first --git --git-repos'
+#alias lls='ls -la -G'
+#alias ll='eza -lh --no-user --no-permissions --icons --group-directories-first --git --git-repos'
+alias ll='ls -lho --color=always'
+alias llr='ll -R'
 alias lla='ll -a'
-alias llt='ll --tree'
+#alias llt='ll --tree'
 alias zshreload='source ~/.zshrc'
 
 alias cd..='cd ..'
